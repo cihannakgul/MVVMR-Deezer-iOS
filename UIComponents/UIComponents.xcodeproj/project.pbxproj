@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA451048416D77370FC39AF3 /* libPods-UIComponents.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6C712DE76F2B63507F4C98 /* libPods-UIComponents.a */; };
 		F0910BAC2A0EE186003FC001 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910BA32A0EE185003FC001 /* UIComponents.framework */; };
 		F0910BB12A0EE186003FC001 /* UIComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910BB02A0EE186003FC001 /* UIComponentsTests.swift */; };
 		F0910BB22A0EE186003FC001 /* UIComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = F0910BA62A0EE185003FC001 /* UIComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0910C1C2A0EEF22003FC001 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C1B2A0EEF22003FC001 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,10 +25,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		823712CC67EE231B3D0A473E /* Pods-UIComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.debug.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.debug.xcconfig"; sourceTree = "<group>"; };
+		933FA989E53E9397BAD561BF /* Pods-UIComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIComponents.release.xcconfig"; path = "Target Support Files/Pods-UIComponents/Pods-UIComponents.release.xcconfig"; sourceTree = "<group>"; };
+		BE6C712DE76F2B63507F4C98 /* libPods-UIComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIComponents.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0910BA32A0EE185003FC001 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0910BA62A0EE185003FC001 /* UIComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponents.h; sourceTree = "<group>"; };
 		F0910BAB2A0EE186003FC001 /* UIComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0910BB02A0EE186003FC001 /* UIComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsTests.swift; sourceTree = "<group>"; };
+		F0910C1B2A0EEF22003FC001 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F0910C1D2A0EEF76003FC001 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA451048416D77370FC39AF3 /* libPods-UIComponents.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,12 +56,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EAF01E447474FC3CBF2CB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				823712CC67EE231B3D0A473E /* Pods-UIComponents.debug.xcconfig */,
+				933FA989E53E9397BAD561BF /* Pods-UIComponents.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		36233401FDFBFB01F0E10660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C1D2A0EEF76003FC001 /* Lottie.framework */,
+				BE6C712DE76F2B63507F4C98 /* libPods-UIComponents.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0910B992A0EE185003FC001 = {
 			isa = PBXGroup;
 			children = (
 				F0910BA52A0EE185003FC001 /* UIComponents */,
 				F0910BAF2A0EE186003FC001 /* UIComponentsTests */,
 				F0910BA42A0EE185003FC001 /* Products */,
+				13EAF01E447474FC3CBF2CB7 /* Pods */,
+				36233401FDFBFB01F0E10660 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +98,7 @@
 		F0910BA52A0EE185003FC001 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F0910C1A2A0EEF15003FC001 /* UIView */,
 				F0910BA62A0EE185003FC001 /* UIComponents.h */,
 			);
 			path = UIComponents;
@@ -80,6 +110,14 @@
 				F0910BB02A0EE186003FC001 /* UIComponentsTests.swift */,
 			);
 			path = UIComponentsTests;
+			sourceTree = "<group>";
+		};
+		F0910C1A2A0EEF15003FC001 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C1B2A0EEF22003FC001 /* LoadingView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0910BB52A0EE186003FC001 /* Build configuration list for PBXNativeTarget "UIComponents" */;
 			buildPhases = (
+				A8312A1702BF5E4E474036F4 /* [CP] Check Pods Manifest.lock */,
 				F0910B9E2A0EE185003FC001 /* Headers */,
 				F0910B9F2A0EE185003FC001 /* Sources */,
 				F0910BA02A0EE185003FC001 /* Frameworks */,
@@ -144,6 +183,7 @@
 				TargetAttributes = {
 					F0910BA22A0EE185003FC001 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 					F0910BAA2A0EE186003FC001 = {
 						CreatedOnToolsVersion = 14.0;
@@ -186,11 +226,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A8312A1702BF5E4E474036F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIComponents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0910B9F2A0EE185003FC001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0910C1C2A0EEF22003FC001 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +401,9 @@
 		};
 		F0910BB62A0EE186003FC001 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823712CC67EE231B3D0A473E /* Pods-UIComponents.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -356,6 +424,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +432,9 @@
 		};
 		F0910BB72A0EE186003FC001 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933FA989E53E9397BAD561BF /* Pods-UIComponents.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -392,6 +463,7 @@
 		F0910BB92A0EE186003FC001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5U3VZFY2A;
@@ -408,6 +480,7 @@
 		F0910BBA2A0EE186003FC001 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5U3VZFY2A;
