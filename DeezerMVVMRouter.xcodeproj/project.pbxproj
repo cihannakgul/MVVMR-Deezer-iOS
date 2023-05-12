@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		387A423AB25F1EF422ABE561 /* Pods_DeezerMVVMRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C4963A0F9EBA34C7525C07 /* Pods_DeezerMVVMRouter.framework */; };
+		F0910B862A0EE132003FC001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910B852A0EE132003FC001 /* AppDelegate.swift */; };
+		F0910B882A0EE132003FC001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910B872A0EE132003FC001 /* SceneDelegate.swift */; };
+		F0910B8A2A0EE132003FC001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910B892A0EE132003FC001 /* ViewController.swift */; };
+		F0910B8D2A0EE132003FC001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0910B8B2A0EE132003FC001 /* Main.storyboard */; };
+		F0910B8F2A0EE137003FC001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0910B8E2A0EE137003FC001 /* Assets.xcassets */; };
+		F0910B922A0EE137003FC001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0910B902A0EE137003FC001 /* LaunchScreen.storyboard */; };
+		F0910C002A0EE20B003FC001 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910BFF2A0EE20B003FC001 /* DataProvider.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38B304CFC8145F49F8830E36 /* Pods-DeezerMVVMRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeezerMVVMRouter.release.xcconfig"; path = "Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter.release.xcconfig"; sourceTree = "<group>"; };
+		481138053B1508A33734155A /* Pods-DeezerMVVMRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeezerMVVMRouter.debug.xcconfig"; path = "Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter.debug.xcconfig"; sourceTree = "<group>"; };
+		D0C4963A0F9EBA34C7525C07 /* Pods_DeezerMVVMRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeezerMVVMRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0910B822A0EE132003FC001 /* DeezerMVVMRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerMVVMRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0910B852A0EE132003FC001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0910B872A0EE132003FC001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0910B892A0EE132003FC001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0910B8C2A0EE132003FC001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0910B8E2A0EE137003FC001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0910B912A0EE137003FC001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0910B932A0EE137003FC001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0910BFF2A0EE20B003FC001 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0910B7F2A0EE132003FC001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0910C002A0EE20B003FC001 /* DataProvider.framework in Frameworks */,
+				387A423AB25F1EF422ABE561 /* Pods_DeezerMVVMRouter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6665627E510F65690D015A47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				481138053B1508A33734155A /* Pods-DeezerMVVMRouter.debug.xcconfig */,
+				38B304CFC8145F49F8830E36 /* Pods-DeezerMVVMRouter.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A898DC505DF8F466A4D81076 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0910BFF2A0EE20B003FC001 /* DataProvider.framework */,
+				D0C4963A0F9EBA34C7525C07 /* Pods_DeezerMVVMRouter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0910B792A0EE132003FC001 = {
+			isa = PBXGroup;
+			children = (
+				F0910B842A0EE132003FC001 /* DeezerMVVMRouter */,
+				F0910B832A0EE132003FC001 /* Products */,
+				6665627E510F65690D015A47 /* Pods */,
+				A898DC505DF8F466A4D81076 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0910B832A0EE132003FC001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0910B822A0EE132003FC001 /* DeezerMVVMRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0910B842A0EE132003FC001 /* DeezerMVVMRouter */ = {
+			isa = PBXGroup;
+			children = (
+				F0910B852A0EE132003FC001 /* AppDelegate.swift */,
+				F0910B872A0EE132003FC001 /* SceneDelegate.swift */,
+				F0910B892A0EE132003FC001 /* ViewController.swift */,
+				F0910B8B2A0EE132003FC001 /* Main.storyboard */,
+				F0910B8E2A0EE137003FC001 /* Assets.xcassets */,
+				F0910B902A0EE137003FC001 /* LaunchScreen.storyboard */,
+				F0910B932A0EE137003FC001 /* Info.plist */,
+			);
+			path = DeezerMVVMRouter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0910B812A0EE132003FC001 /* DeezerMVVMRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0910B962A0EE137003FC001 /* Build configuration list for PBXNativeTarget "DeezerMVVMRouter" */;
+			buildPhases = (
+				06372DF3320452AF78666CB7 /* [CP] Check Pods Manifest.lock */,
+				F0910B7E2A0EE132003FC001 /* Sources */,
+				F0910B7F2A0EE132003FC001 /* Frameworks */,
+				F0910B802A0EE132003FC001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeezerMVVMRouter;
+			productName = DeezerMVVMRouter;
+			productReference = F0910B822A0EE132003FC001 /* DeezerMVVMRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0910B7A2A0EE132003FC001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F0910B812A0EE132003FC001 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = F0910B7D2A0EE132003FC001 /* Build configuration list for PBXProject "DeezerMVVMRouter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0910B792A0EE132003FC001;
+			productRefGroup = F0910B832A0EE132003FC001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0910B812A0EE132003FC001 /* DeezerMVVMRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0910B802A0EE132003FC001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0910B922A0EE137003FC001 /* LaunchScreen.storyboard in Resources */,
+				F0910B8F2A0EE137003FC001 /* Assets.xcassets in Resources */,
+				F0910B8D2A0EE132003FC001 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06372DF3320452AF78666CB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeezerMVVMRouter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0910B7E2A0EE132003FC001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0910B8A2A0EE132003FC001 /* ViewController.swift in Sources */,
+				F0910B862A0EE132003FC001 /* AppDelegate.swift in Sources */,
+				F0910B882A0EE132003FC001 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0910B8B2A0EE132003FC001 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0910B8C2A0EE132003FC001 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0910B902A0EE137003FC001 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0910B912A0EE137003FC001 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0910B942A0EE137003FC001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0910B952A0EE137003FC001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0910B972A0EE137003FC001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481138053B1508A33734155A /* Pods-DeezerMVVMRouter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5U3VZFY2A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeezerMVVMRouter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihanios.DeezerMVVMRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0910B982A0EE137003FC001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B304CFC8145F49F8830E36 /* Pods-DeezerMVVMRouter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5U3VZFY2A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeezerMVVMRouter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cihanios.DeezerMVVMRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0910B7D2A0EE132003FC001 /* Build configuration list for PBXProject "DeezerMVVMRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0910B942A0EE137003FC001 /* Debug */,
+				F0910B952A0EE137003FC001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0910B962A0EE137003FC001 /* Build configuration list for PBXNativeTarget "DeezerMVVMRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0910B972A0EE137003FC001 /* Debug */,
+				F0910B982A0EE137003FC001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0910B7A2A0EE132003FC001 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_DeezerMVVMRouter {
+  umbrella header "Pods-DeezerMVVMRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}
