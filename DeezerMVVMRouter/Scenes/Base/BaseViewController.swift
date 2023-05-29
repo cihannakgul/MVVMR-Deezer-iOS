@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import UIComponents
 class BaseViewController<V: BaseViewModelProtocol>: UIViewController {
-
+ 
     var viewModel: V
 
     init(viewModel: V) {
@@ -63,3 +63,52 @@ extension BaseViewController {
         }
     }
 }
+// MARK: - Base Navigation Controller
+extension BaseViewController {
+    func navigationControllerConfig(titleName: String) {
+        
+        guard let navigationController = navigationController,
+            let flareGradientImage = CAGradientLayer.primaryGradient(on: navigationController.navigationBar)
+            else {
+                print("Error creating gradient color!")
+                return
+            }
+        navigationItem.title = titleName
+        navigationController.navigationBar.isTranslucent = false
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(patternImage: flareGradientImage)
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = textAttributes
+        appearance.largeTitleTextAttributes = textAttributes
+        navigationController.navigationBar.standardAppearance = appearance
+        navigationController.navigationBar.scrollEdgeAppearance = appearance
+        
+        
+//        var gradient: CAGradientLayer = {
+//           let gradient = CAGradientLayer()
+//           gradient.type = .axial
+//           gradient.colors = [
+//               UIColor.red.cgColor,
+//               UIColor.purple.cgColor,
+//               UIColor.cyan.cgColor
+//           ]
+//           gradient.locations = [0, 0.25, 1]
+//           return gradient
+//       }()
+
+ 
+
+//        let appearance = UINavigationBarAppearance()
+//        appearance.backgroundColor = UIColor.orange
+//        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//        appearance.titleTextAttributes = textAttributes
+//        appearance.largeTitleTextAttributes = textAttributes
+//        navigationController?.navigationBar.isTranslucent = false
+//        navigationController?.navigationBar.standardAppearance = appearance
+//        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    
+
+}
+
