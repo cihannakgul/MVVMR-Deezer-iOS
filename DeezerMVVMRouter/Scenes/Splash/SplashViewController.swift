@@ -17,6 +17,7 @@ final class SplashViewController: BaseViewController<SplashViewModel> {
         viewModel.viewDidLoad()
         configAnimation()
         addSubViews()
+        viewModel.goOther()
 
     }
 }
@@ -53,15 +54,22 @@ extension SplashViewController {
 extension SplashViewController: SplashViewRouteDelegate {
     
     func goToHomePage() {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-//                  // go other page
-//                }
 //        guard let window = app.router.window else { return }
-//        let homeViewController = HomeRouter.createHomeScreen()
+//        let musicCategoriesViewController = MusicCategoriesRouter.createMusicCategoriesRouter()
 //        UIView.transition(with: window, duration: 1, options: .transitionFlipFromBottom, animations: {
 //            UIView.performWithoutAnimation {
-//                window.rootViewController = homeViewController
+//                window.rootViewController = musicCategoriesViewController
 //            }
 //        }, completion: nil)
+//        
+        guard let window = UIApplication.shared.windows.first else { return }
+        UIView.transition(with: window, duration: 0, options: .transitionFlipFromBottom, animations: {
+                   UIView.performWithoutAnimation {
+                       window.rootViewController = TabBarController()
+                   }
+               }, completion: nil)
+    
     }
 }
+
+ 

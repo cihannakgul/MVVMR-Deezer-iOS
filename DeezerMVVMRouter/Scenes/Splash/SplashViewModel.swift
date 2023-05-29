@@ -34,3 +34,12 @@ final class SplashViewModel: BaseViewModel, SplashViewProtocol {
       animationName?("music")
     }
 }
+
+extension SplashViewModel {
+    func goOther() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+            guard let self = self else { return }
+            self.routeDelegate?.goToHomePage()
+        }
+    }
+}
