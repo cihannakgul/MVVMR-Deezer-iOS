@@ -11,6 +11,8 @@
 		F0910BD32A0EE1AD003FC001 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910BD22A0EE1AD003FC001 /* UtilitiesTests.swift */; };
 		F0910BD42A0EE1AD003FC001 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F0910BC82A0EE1AD003FC001 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0910C172A0EEDD0003FC001 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C162A0EEDD0003FC001 /* Constants.swift */; };
+		F0BD1C012A163977009BAE84 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD1C002A163977009BAE84 /* UIImage+Extensions.swift */; };
+		F0BD1C032A165AE6009BAE84 /* GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD1C022A165AE6009BAE84 /* GradientColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		F0910BCD2A0EE1AD003FC001 /* UtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0910BD22A0EE1AD003FC001 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		F0910C162A0EEDD0003FC001 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F0BD1C002A163977009BAE84 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		F0BD1C022A165AE6009BAE84 /* GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		F0910BBB2A0EE1AD003FC001 = {
 			isa = PBXGroup;
 			children = (
+				F0BD1C022A165AE6009BAE84 /* GradientColor.swift */,
 				F0910BC72A0EE1AD003FC001 /* Utilities */,
 				F0910BD12A0EE1AD003FC001 /* UtilitiesTests */,
 				F0910BC62A0EE1AD003FC001 /* Products */,
@@ -73,6 +78,7 @@
 			children = (
 				F0910BC82A0EE1AD003FC001 /* Utilities.h */,
 				F0910C162A0EEDD0003FC001 /* Constants.swift */,
+				F0BD1C002A163977009BAE84 /* UIImage+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0910C172A0EEDD0003FC001 /* Constants.swift in Sources */,
+				F0BD1C032A165AE6009BAE84 /* GradientColor.swift in Sources */,
+				F0BD1C012A163977009BAE84 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
