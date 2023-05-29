@@ -9,6 +9,5 @@ import Foundation
 
 public class TestData {
     public static func test() {
-        print("its work")
     }
 }
