@@ -20,6 +20,7 @@ public protocol CategoriesCellProtocol: CategoriesCellDataSource, CategoriesCell
     
 }
 
+
 public final class CategoriesCellModel: CategoriesCellProtocol {
     public var categoriesId: Int?
     public var categoriesTitle: String?

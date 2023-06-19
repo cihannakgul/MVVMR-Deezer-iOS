@@ -17,6 +17,10 @@
 		F0910C1C2A0EEF22003FC001 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C1B2A0EEF22003FC001 /* LoadingView.swift */; };
 		F0AB19E72A142F30003F1F12 /* CategoriesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19E62A142F30003F1F12 /* CategoriesCellModel.swift */; };
 		F0AB19E92A142F45003F1F12 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19E82A142F45003F1F12 /* CategoriesCell.swift */; };
+		F0CCD64A2A3A69D00054031E /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD6492A3A69D00054031E /* ArtistCell.swift */; };
+		F0CCD64C2A3A69DB0054031E /* ArtistCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD64B2A3A69DB0054031E /* ArtistCellModel.swift */; };
+		F0E37F6F2A40E71100CEFAAE /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F6E2A40E71100CEFAAE /* AlbumCell.swift */; };
+		F0E37F712A40E71A00CEFAAE /* AlbumCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F702A40E71A00CEFAAE /* AlbumCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		F0910C1D2A0EEF76003FC001 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AB19E62A142F30003F1F12 /* CategoriesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCellModel.swift; sourceTree = "<group>"; };
 		F0AB19E82A142F45003F1F12 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		F0CCD6492A3A69D00054031E /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		F0CCD64B2A3A69DB0054031E /* ArtistCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCellModel.swift; sourceTree = "<group>"; };
+		F0E37F6E2A40E71100CEFAAE /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		F0E37F702A40E71A00CEFAAE /* AlbumCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,10 +161,38 @@
 		F0AB19E52A142F03003F1F12 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F0E37F6D2A40E6AA00CEFAAE /* AlbumCell */,
+				F0CCD6482A3A52590054031E /* ArtistCell */,
+				F0CCD6472A3A524D0054031E /* CategoriesCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F0CCD6472A3A524D0054031E /* CategoriesCell */ = {
+			isa = PBXGroup;
+			children = (
 				F0AB19E62A142F30003F1F12 /* CategoriesCellModel.swift */,
 				F0AB19E82A142F45003F1F12 /* CategoriesCell.swift */,
 			);
-			path = Cell;
+			path = CategoriesCell;
+			sourceTree = "<group>";
+		};
+		F0CCD6482A3A52590054031E /* ArtistCell */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCD6492A3A69D00054031E /* ArtistCell.swift */,
+				F0CCD64B2A3A69DB0054031E /* ArtistCellModel.swift */,
+			);
+			path = ArtistCell;
+			sourceTree = "<group>";
+		};
+		F0E37F6D2A40E6AA00CEFAAE /* AlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				F0E37F6E2A40E71100CEFAAE /* AlbumCell.swift */,
+				F0E37F702A40E71A00CEFAAE /* AlbumCellModel.swift */,
+			);
+			path = AlbumCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,12 +331,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CCD64C2A3A69DB0054031E /* ArtistCellModel.swift in Sources */,
 				F0AB19E92A142F45003F1F12 /* CategoriesCell.swift in Sources */,
 				F0910C1C2A0EEF22003FC001 /* LoadingView.swift in Sources */,
+				F0E37F712A40E71A00CEFAAE /* AlbumCellModel.swift in Sources */,
+				F0CCD64A2A3A69D00054031E /* ArtistCell.swift in Sources */,
 				F04C58B42A1B8D0B00C28ABC /* UICollectionView+Extensions.swift in Sources */,
 				F0AB19E72A142F30003F1F12 /* CategoriesCellModel.swift in Sources */,
 				F04C58B62A1B9A8F00C28ABC /* String+Extensions.swift in Sources */,
 				F04C58B12A1B895700C28ABC /* ReusableView.swift in Sources */,
+				F0E37F6F2A40E71100CEFAAE /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
