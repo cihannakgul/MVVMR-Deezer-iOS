@@ -63,7 +63,7 @@ extension SplashViewController: SplashViewRouteDelegate {
 //        }, completion: nil)
 //        
         guard let window = UIApplication.shared.windows.first else { return }
-        UIView.transition(with: window, duration: 0, options: .transitionFlipFromBottom, animations: {
+        UIView.transition(with: window, duration: 1, options: .transitionFlipFromBottom, animations: {
                    UIView.performWithoutAnimation {
                        window.rootViewController = TabBarController()
                    }

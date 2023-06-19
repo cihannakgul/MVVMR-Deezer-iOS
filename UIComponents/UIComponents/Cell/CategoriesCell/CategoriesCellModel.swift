@@ -9,6 +9,7 @@ import Foundation
 public protocol CategoriesCellDataSource: AnyObject {
     var categoriesImageView: String? { get set }
     var categoriesTitle: String? { get set }
+    var categoriesId: Int? { get set }
 }
 
 public protocol CategoriesCellEventSource: AnyObject {
@@ -18,6 +19,7 @@ public protocol CategoriesCellEventSource: AnyObject {
 public protocol CategoriesCellProtocol: CategoriesCellDataSource, CategoriesCellEventSource {
     
 }
+
 
 public final class CategoriesCellModel: CategoriesCellProtocol {
     public var categoriesId: Int?

@@ -69,20 +69,20 @@ extension CategoriesCell {
 // MARK: - UILayout
 extension CategoriesCell {
     private func configureContents() {
-        configureMovieImageView()
-        configureMovieTitleLabel()
+        configureCategoriesImageView()
+        configureCategoriesTitleLabel()
         guard let viewModel = viewModel else { return }
         categoriesImageView.kf.setImage(with: viewModel.categoriesImageView?.convertUrl, placeholder: .none)
         categoriesTitleLabel.text = viewModel.categoriesTitle
     }
-    private func configureMovieImageView() {
-        categoriesImageView.height(200)
+    private func configureCategoriesImageView() {
+        //categoriesImageView.height(200)
         categoriesImageView.backgroundColor = .black
         categoriesImageView.layer.cornerRadius = 10
         categoriesImageView.clipsToBounds = true
     }
     
-    private func configureMovieTitleLabel() {
+    private func configureCategoriesTitleLabel() {
         categoriesTitleLabel.font = .boldSystemFont(ofSize: 20)
         categoriesTitleLabel.textColor = .white
         categoriesTitleLabel.textAlignment = .center

@@ -38,6 +38,7 @@ class TabBarController: UITabBarController {
         let musicRouter = MusicCategoriesRouter()
         let musicViewModel = MusicCategoriesViewModel(service: service)
         let musicViewController = MusicCategoriesViewController(viewModel: musicViewModel)
+        musicViewModel.routeDelegate = musicViewController
         let navigationController = UINavigationController(rootViewController: musicViewController)
         let musicIconImage = navItemImage(imageString: "musicIcon")
         navigationController.tabBarItem.image = musicIconImage

@@ -74,6 +74,7 @@ extension BaseViewController {
                 return
             }
         navigationItem.title = titleName
+        navigationController.navigationBar.tintColor = UIColor.white
         navigationController.navigationBar.isTranslucent = false
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(patternImage: flareGradientImage)

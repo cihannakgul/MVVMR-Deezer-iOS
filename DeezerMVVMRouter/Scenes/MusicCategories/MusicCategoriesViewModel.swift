@@ -24,20 +24,23 @@ protocol MusicCategoriesViewEventSource {
 protocol MusicCategoriesViewProtocol: MusicCategoriesViewDataSource, MusicCategoriesViewEventSource {
     
     func getAllCategories()
+    func didSelectItem(indexPath: IndexPath)
  
 }
 
-protocol MusicCategoriesViewRouteDelegate: AnyObject {
-    func showDetail()
+protocol MusicCategoriesViewRouteDelegate {
+    func showDetail(genre: CategoriesCellProtocol)
 }
 
 final class MusicCategoriesViewModel: BaseViewModel, MusicCategoriesViewProtocol {
+    var routeDelegate: MusicCategoriesViewRouteDelegate?
     private var cellItems: [CategoriesCellProtocol] = []
      var reloadData: VoidClosure?
      var titleName: StringClosure?
     let service: ServiceProtocol
     init(service: ServiceProtocol) {
         self.service = service
+        
     }
  
     func cellForItemAt(indexPath: IndexPath) -> CategoriesCellProtocol {
@@ -50,7 +53,6 @@ final class MusicCategoriesViewModel: BaseViewModel, MusicCategoriesViewProtocol
         titleName?("Music Categories")
     }
     
-    weak var routeDelegate: MusicCategoriesViewRouteDelegate?
 
 }
 
@@ -67,4 +69,11 @@ extension MusicCategoriesViewModel {
     }
 }
 
-
+extension MusicCategoriesViewModel {
+    func didSelectItem(indexPath: IndexPath) {
+        let item = cellItems[indexPath.row]
+       // guard let artistId = item.categoriesId else { return }
+      
+        self.routeDelegate?.showDetail(genre: item)
+    }
+}
