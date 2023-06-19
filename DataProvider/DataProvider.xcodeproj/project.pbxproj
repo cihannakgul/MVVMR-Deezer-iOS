@@ -16,6 +16,10 @@
 		F0910BF52A0EE1CD003FC001 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910BF42A0EE1CD003FC001 /* DataProviderTests.swift */; };
 		F0910BF62A0EE1CD003FC001 /* DataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = F0910BEA2A0EE1CC003FC001 /* DataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0910C022A0EE21A003FC001 /* DataProviderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C012A0EE21A003FC001 /* DataProviderTesting.swift */; };
+		F0CCD6442A3A4A010054031E /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD6432A3A4A010054031E /* Artist.swift */; };
+		F0CCD6462A3A4A3E0054031E /* ArtistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD6452A3A4A3E0054031E /* ArtistResponse.swift */; };
+		F0E37F6A2A40D6D000CEFAAE /* AlbumResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F692A40D6D000CEFAAE /* AlbumResponse.swift */; };
+		F0E37F6C2A40D6ED00CEFAAE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F6B2A40D6ED00CEFAAE /* Album.swift */; };
 		F56390A6C4685E387FEE9998 /* libPods-DataProvider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20821CB80B224A57CD87CE41 /* libPods-DataProvider.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,10 @@
 		F0910BEF2A0EE1CD003FC001 /* DataProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0910BF42A0EE1CD003FC001 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		F0910C012A0EE21A003FC001 /* DataProviderTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTesting.swift; sourceTree = "<group>"; };
+		F0CCD6432A3A4A010054031E /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		F0CCD6452A3A4A3E0054031E /* ArtistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistResponse.swift; sourceTree = "<group>"; };
+		F0E37F692A40D6D000CEFAAE /* AlbumResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResponse.swift; sourceTree = "<group>"; };
+		F0E37F6B2A40D6ED00CEFAAE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 			children = (
 				F04C58B92A1BAF8400C28ABC /* Categories.swift */,
 				F004600A2A1F9283000625FC /* DataResponse.swift */,
+				F0CCD6432A3A4A010054031E /* Artist.swift */,
+				F0CCD6452A3A4A3E0054031E /* ArtistResponse.swift */,
+				F0E37F692A40D6D000CEFAAE /* AlbumResponse.swift */,
+				F0E37F6B2A40D6ED00CEFAAE /* Album.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -290,7 +302,11 @@
 				F04C58BA2A1BAF8400C28ABC /* Categories.swift in Sources */,
 				F00460062A1F862A000625FC /* ServiceRequests.swift in Sources */,
 				F004600B2A1F9283000625FC /* DataResponse.swift in Sources */,
+				F0CCD6462A3A4A3E0054031E /* ArtistResponse.swift in Sources */,
+				F0E37F6A2A40D6D000CEFAAE /* AlbumResponse.swift in Sources */,
 				F00460042A1F85C5000625FC /* ServiceManager.swift in Sources */,
+				F0CCD6442A3A4A010054031E /* Artist.swift in Sources */,
+				F0E37F6C2A40D6ED00CEFAAE /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
