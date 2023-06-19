@@ -7,7 +7,17 @@
 
 import Foundation
 
-public class TestData {
-    public static func test() {
+     
+    public func test() {
+        let artistUrl = Constant.ServiceEndPoint.getAlbumOfArtistUrl(artistId: 8354140)
+        print(artistUrl)
+        var service: ServiceProtocol = Service()
+        service.getAlbumOfArtist(artistId: 8354140) { response in
+            print(response)
+        } onError: { error in
+            print(error?.localizedDescription)
+        }
+
+        
     }
-}
+
