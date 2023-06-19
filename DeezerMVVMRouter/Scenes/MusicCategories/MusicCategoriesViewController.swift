@@ -25,7 +25,6 @@ final class MusicCategoriesViewController: BaseViewController<MusicCategoriesVie
         super.viewDidLoad()
         addSubViews()
         viewModel.getAllCategories()
-
         collectionView.register(CategoriesCell.self)
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -33,10 +32,11 @@ final class MusicCategoriesViewController: BaseViewController<MusicCategoriesVie
         subscribeViewModel()
         viewModel.viewDidLoad()
         configureContents()
-
     }
  
 }
+
+
 
 // MARK: - Constraints
 extension MusicCategoriesViewController {
@@ -76,7 +76,8 @@ extension MusicCategoriesViewController {
 extension MusicCategoriesViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       // viewModel.didSelectItem(indexPath: indexPath)
+        viewModel.didSelectItem(indexPath: indexPath)
+        print("indexpath select \(indexPath)")
     }
     
 }
@@ -123,9 +124,11 @@ extension MusicCategoriesViewController: UICollectionViewDelegateFlowLayout {
 
 // MARK: - RouteDelegate
 extension MusicCategoriesViewController: MusicCategoriesViewRouteDelegate {
-    
-    func showDetail() {
-//        let viewController = DetailRouter.create(movie: movie)
-//        navigationController?.pushViewController(viewController, animated: true)
+    func showDetail(genre: CategoriesCellProtocol) {
+        let viewController = ArtistRouter.create(genre: genre)
+        navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    
+  
 }
