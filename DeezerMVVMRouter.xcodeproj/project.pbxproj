@@ -7,29 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		387A423AB25F1EF422ABE561 /* Pods_DeezerMVVMRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C4963A0F9EBA34C7525C07 /* Pods_DeezerMVVMRouter.framework */; };
+		79FC79CA65D1D93E74571FA9 /* Pods_DeezerMVVMRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040C3EB8D2EA1358EB129E24 /* Pods_DeezerMVVMRouter.framework */; };
+		F00460092A1F8AAF000625FC /* CategoriesCellModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00460082A1F8AAF000625FC /* CategoriesCellModel+Extensions.swift */; };
 		F0910B862A0EE132003FC001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910B852A0EE132003FC001 /* AppDelegate.swift */; };
-		F0910B882A0EE132003FC001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910B872A0EE132003FC001 /* SceneDelegate.swift */; };
-		F0910B8A2A0EE132003FC001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910B892A0EE132003FC001 /* ViewController.swift */; };
-		F0910B8D2A0EE132003FC001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0910B8B2A0EE132003FC001 /* Main.storyboard */; };
 		F0910B8F2A0EE137003FC001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0910B8E2A0EE137003FC001 /* Assets.xcassets */; };
 		F0910B922A0EE137003FC001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0910B902A0EE137003FC001 /* LaunchScreen.storyboard */; };
 		F0910C002A0EE20B003FC001 /* DataProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910BFF2A0EE20B003FC001 /* DataProvider.framework */; };
+		F0910C052A0EE64D003FC001 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C042A0EE64D003FC001 /* AppRouter.swift */; };
+		F0910C0A2A0EE6BB003FC001 /* MusicCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C092A0EE6BB003FC001 /* MusicCategoriesViewController.swift */; };
+		F0910C0C2A0EE6CE003FC001 /* MusicCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C0B2A0EE6CE003FC001 /* MusicCategoriesViewModel.swift */; };
+		F0910C0E2A0EE716003FC001 /* MusicCategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C0D2A0EE716003FC001 /* MusicCategoriesRouter.swift */; };
+		F0910C132A0EED84003FC001 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C122A0EED84003FC001 /* BaseViewController.swift */; };
+		F0910C152A0EED8E003FC001 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C142A0EED8E003FC001 /* BaseViewModel.swift */; };
+		F0910C192A0EEDEB003FC001 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910C182A0EEDEB003FC001 /* Utilities.framework */; };
+		F0910C202A0EF0E3003FC001 /* UIComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0910C1F2A0EF0E3003FC001 /* UIComponents.framework */; };
+		F0910C232A0EF254003FC001 /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C222A0EF254003FC001 /* SplashRouter.swift */; };
+		F0910C252A0EF260003FC001 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C242A0EF260003FC001 /* SplashViewController.swift */; };
+		F0910C272A0EF26E003FC001 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C262A0EF26E003FC001 /* SplashViewModel.swift */; };
+		F0910C2A2A0EF81B003FC001 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0910C292A0EF81B003FC001 /* AppContainer.swift */; };
+		F0AB19EC2A143A94003F1F12 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19EB2A143A94003F1F12 /* FavoritesViewController.swift */; };
+		F0AB19EE2A143AA0003F1F12 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19ED2A143AA0003F1F12 /* FavoritesViewModel.swift */; };
+		F0AB19F02A143AAC003F1F12 /* FavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19EF2A143AAC003F1F12 /* FavoritesRouter.swift */; };
+		F0AB19F22A143AB4003F1F12 /* FavoritesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19F12A143AB4003F1F12 /* FavoritesRoute.swift */; };
+		F0AB19F52A143C91003F1F12 /* TabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19F42A143C91003F1F12 /* TabBarRoute.swift */; };
+		F0AB19F72A143C9A003F1F12 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AB19F62A143C9A003F1F12 /* TabBarController.swift */; };
+		F0CCD6402A3A49B00054031E /* ArtistRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD63D2A3A49B00054031E /* ArtistRouter.swift */; };
+		F0CCD6412A3A49B00054031E /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD63E2A3A49B00054031E /* ArtistViewController.swift */; };
+		F0CCD6422A3A49B00054031E /* ArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD63F2A3A49B00054031E /* ArtistViewModel.swift */; };
+		F0CCD64E2A3A70DC0054031E /* ArtistCellModel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CCD64D2A3A70DC0054031E /* ArtistCellModel+Extensions.swift */; };
+		F0E37F662A40D27A00CEFAAE /* ArtistAlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F632A40D27A00CEFAAE /* ArtistAlbumRouter.swift */; };
+		F0E37F672A40D27A00CEFAAE /* ArtistAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F642A40D27A00CEFAAE /* ArtistAlbumViewController.swift */; };
+		F0E37F682A40D27A00CEFAAE /* ArtistAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E37F652A40D27A00CEFAAE /* ArtistAlbumViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38B304CFC8145F49F8830E36 /* Pods-DeezerMVVMRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeezerMVVMRouter.release.xcconfig"; path = "Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter.release.xcconfig"; sourceTree = "<group>"; };
-		481138053B1508A33734155A /* Pods-DeezerMVVMRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeezerMVVMRouter.debug.xcconfig"; path = "Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter.debug.xcconfig"; sourceTree = "<group>"; };
-		D0C4963A0F9EBA34C7525C07 /* Pods_DeezerMVVMRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeezerMVVMRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040C3EB8D2EA1358EB129E24 /* Pods_DeezerMVVMRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeezerMVVMRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2812DCDBA5091D8ABC65DF16 /* Pods-DeezerMVVMRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeezerMVVMRouter.release.xcconfig"; path = "Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter.release.xcconfig"; sourceTree = "<group>"; };
+		2D62661A60AC55E134CFF70B /* Pods-DeezerMVVMRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeezerMVVMRouter.debug.xcconfig"; path = "Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter.debug.xcconfig"; sourceTree = "<group>"; };
+		F00460082A1F8AAF000625FC /* CategoriesCellModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoriesCellModel+Extensions.swift"; sourceTree = "<group>"; };
 		F0910B822A0EE132003FC001 /* DeezerMVVMRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerMVVMRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0910B852A0EE132003FC001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0910B872A0EE132003FC001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0910B892A0EE132003FC001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F0910B8C2A0EE132003FC001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0910B8E2A0EE137003FC001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0910B912A0EE137003FC001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0910B932A0EE137003FC001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0910BFF2A0EE20B003FC001 /* DataProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0910C042A0EE64D003FC001 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		F0910C092A0EE6BB003FC001 /* MusicCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCategoriesViewController.swift; sourceTree = "<group>"; };
+		F0910C0B2A0EE6CE003FC001 /* MusicCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCategoriesViewModel.swift; sourceTree = "<group>"; };
+		F0910C0D2A0EE716003FC001 /* MusicCategoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCategoriesRouter.swift; sourceTree = "<group>"; };
+		F0910C122A0EED84003FC001 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F0910C142A0EED8E003FC001 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F0910C182A0EEDEB003FC001 /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0910C1F2A0EF0E3003FC001 /* UIComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0910C222A0EF254003FC001 /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		F0910C242A0EF260003FC001 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F0910C262A0EF26E003FC001 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F0910C292A0EF81B003FC001 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		F0AB19EB2A143A94003F1F12 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F0AB19ED2A143AA0003F1F12 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		F0AB19EF2A143AAC003F1F12 /* FavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRouter.swift; sourceTree = "<group>"; };
+		F0AB19F12A143AB4003F1F12 /* FavoritesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRoute.swift; sourceTree = "<group>"; };
+		F0AB19F42A143C91003F1F12 /* TabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRoute.swift; sourceTree = "<group>"; };
+		F0AB19F62A143C9A003F1F12 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F0CCD63D2A3A49B00054031E /* ArtistRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRouter.swift; sourceTree = "<group>"; };
+		F0CCD63E2A3A49B00054031E /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		F0CCD63F2A3A49B00054031E /* ArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewModel.swift; sourceTree = "<group>"; };
+		F0CCD64D2A3A70DC0054031E /* ArtistCellModel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArtistCellModel+Extensions.swift"; sourceTree = "<group>"; };
+		F0E37F632A40D27A00CEFAAE /* ArtistAlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbumRouter.swift; sourceTree = "<group>"; };
+		F0E37F642A40D27A00CEFAAE /* ArtistAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbumViewController.swift; sourceTree = "<group>"; };
+		F0E37F652A40D27A00CEFAAE /* ArtistAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistAlbumViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0910C202A0EF0E3003FC001 /* UIComponents.framework in Frameworks */,
+				F0910C192A0EEDEB003FC001 /* Utilities.framework in Frameworks */,
 				F0910C002A0EE20B003FC001 /* DataProvider.framework in Frameworks */,
-				387A423AB25F1EF422ABE561 /* Pods_DeezerMVVMRouter.framework in Frameworks */,
+				79FC79CA65D1D93E74571FA9 /* Pods_DeezerMVVMRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +96,8 @@
 		6665627E510F65690D015A47 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				481138053B1508A33734155A /* Pods-DeezerMVVMRouter.debug.xcconfig */,
-				38B304CFC8145F49F8830E36 /* Pods-DeezerMVVMRouter.release.xcconfig */,
+				2D62661A60AC55E134CFF70B /* Pods-DeezerMVVMRouter.debug.xcconfig */,
+				2812DCDBA5091D8ABC65DF16 /* Pods-DeezerMVVMRouter.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -57,10 +105,21 @@
 		A898DC505DF8F466A4D81076 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F0910C1F2A0EF0E3003FC001 /* UIComponents.framework */,
+				F0910C182A0EEDEB003FC001 /* Utilities.framework */,
 				F0910BFF2A0EE20B003FC001 /* DataProvider.framework */,
-				D0C4963A0F9EBA34C7525C07 /* Pods_DeezerMVVMRouter.framework */,
+				040C3EB8D2EA1358EB129E24 /* Pods_DeezerMVVMRouter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00460072A1F8AA1000625FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F00460082A1F8AAF000625FC /* CategoriesCellModel+Extensions.swift */,
+				F0CCD64D2A3A70DC0054031E /* ArtistCellModel+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F0910B792A0EE132003FC001 = {
@@ -84,15 +143,123 @@
 		F0910B842A0EE132003FC001 /* DeezerMVVMRouter */ = {
 			isa = PBXGroup;
 			children = (
-				F0910B852A0EE132003FC001 /* AppDelegate.swift */,
-				F0910B872A0EE132003FC001 /* SceneDelegate.swift */,
-				F0910B892A0EE132003FC001 /* ViewController.swift */,
-				F0910B8B2A0EE132003FC001 /* Main.storyboard */,
+				F00460072A1F8AA1000625FC /* Extensions */,
+				F0910C282A0EF810003FC001 /* App */,
+				F0910C072A0EE67B003FC001 /* Scenes */,
+				F0910C062A0EE668003FC001 /* Delegate */,
+				F0910C032A0EE63A003FC001 /* Routing */,
 				F0910B8E2A0EE137003FC001 /* Assets.xcassets */,
 				F0910B902A0EE137003FC001 /* LaunchScreen.storyboard */,
 				F0910B932A0EE137003FC001 /* Info.plist */,
 			);
 			path = DeezerMVVMRouter;
+			sourceTree = "<group>";
+		};
+		F0910C032A0EE63A003FC001 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C042A0EE64D003FC001 /* AppRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		F0910C062A0EE668003FC001 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F0910B852A0EE132003FC001 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F0910C072A0EE67B003FC001 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F0E37F622A40D24800CEFAAE /* ArtistAlbum */,
+				F0CCD63C2A3A49950054031E /* Artists */,
+				F0AB19F32A143BEC003F1F12 /* TabBar */,
+				F0AB19EA2A143753003F1F12 /* Favorites */,
+				F0910C212A0EF1F9003FC001 /* Splash */,
+				F0910C112A0EE72A003FC001 /* Base */,
+				F0910C082A0EE694003FC001 /* MusicCategories */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F0910C082A0EE694003FC001 /* MusicCategories */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C092A0EE6BB003FC001 /* MusicCategoriesViewController.swift */,
+				F0910C0B2A0EE6CE003FC001 /* MusicCategoriesViewModel.swift */,
+				F0910C0D2A0EE716003FC001 /* MusicCategoriesRouter.swift */,
+			);
+			path = MusicCategories;
+			sourceTree = "<group>";
+		};
+		F0910C112A0EE72A003FC001 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C122A0EED84003FC001 /* BaseViewController.swift */,
+				F0910C142A0EED8E003FC001 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F0910C212A0EF1F9003FC001 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C222A0EF254003FC001 /* SplashRouter.swift */,
+				F0910C242A0EF260003FC001 /* SplashViewController.swift */,
+				F0910C262A0EF26E003FC001 /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F0910C282A0EF810003FC001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F0910C292A0EF81B003FC001 /* AppContainer.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F0AB19EA2A143753003F1F12 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				F0AB19EB2A143A94003F1F12 /* FavoritesViewController.swift */,
+				F0AB19ED2A143AA0003F1F12 /* FavoritesViewModel.swift */,
+				F0AB19EF2A143AAC003F1F12 /* FavoritesRouter.swift */,
+				F0AB19F12A143AB4003F1F12 /* FavoritesRoute.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		F0AB19F32A143BEC003F1F12 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F0AB19F42A143C91003F1F12 /* TabBarRoute.swift */,
+				F0AB19F62A143C9A003F1F12 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F0CCD63C2A3A49950054031E /* Artists */ = {
+			isa = PBXGroup;
+			children = (
+				F0CCD63D2A3A49B00054031E /* ArtistRouter.swift */,
+				F0CCD63E2A3A49B00054031E /* ArtistViewController.swift */,
+				F0CCD63F2A3A49B00054031E /* ArtistViewModel.swift */,
+			);
+			path = Artists;
+			sourceTree = "<group>";
+		};
+		F0E37F622A40D24800CEFAAE /* ArtistAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				F0E37F632A40D27A00CEFAAE /* ArtistAlbumRouter.swift */,
+				F0E37F642A40D27A00CEFAAE /* ArtistAlbumViewController.swift */,
+				F0E37F652A40D27A00CEFAAE /* ArtistAlbumViewModel.swift */,
+			);
+			path = ArtistAlbum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0910B962A0EE137003FC001 /* Build configuration list for PBXNativeTarget "DeezerMVVMRouter" */;
 			buildPhases = (
-				06372DF3320452AF78666CB7 /* [CP] Check Pods Manifest.lock */,
+				6FD760C4DB7D8955AD407BA6 /* [CP] Check Pods Manifest.lock */,
 				F0910B7E2A0EE132003FC001 /* Sources */,
 				F0910B7F2A0EE132003FC001 /* Frameworks */,
 				F0910B802A0EE132003FC001 /* Resources */,
+				226E3221D518D1A66782D372 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,14 +324,30 @@
 			files = (
 				F0910B922A0EE137003FC001 /* LaunchScreen.storyboard in Resources */,
 				F0910B8F2A0EE137003FC001 /* Assets.xcassets in Resources */,
-				F0910B8D2A0EE132003FC001 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06372DF3320452AF78666CB7 /* [CP] Check Pods Manifest.lock */ = {
+		226E3221D518D1A66782D372 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeezerMVVMRouter/Pods-DeezerMVVMRouter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD760C4DB7D8955AD407BA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,23 +376,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0910B8A2A0EE132003FC001 /* ViewController.swift in Sources */,
+				F0AB19F02A143AAC003F1F12 /* FavoritesRouter.swift in Sources */,
+				F0E37F672A40D27A00CEFAAE /* ArtistAlbumViewController.swift in Sources */,
+				F0CCD64E2A3A70DC0054031E /* ArtistCellModel+Extensions.swift in Sources */,
+				F0AB19F22A143AB4003F1F12 /* FavoritesRoute.swift in Sources */,
+				F00460092A1F8AAF000625FC /* CategoriesCellModel+Extensions.swift in Sources */,
+				F0CCD6422A3A49B00054031E /* ArtistViewModel.swift in Sources */,
+				F0AB19EC2A143A94003F1F12 /* FavoritesViewController.swift in Sources */,
+				F0AB19F72A143C9A003F1F12 /* TabBarController.swift in Sources */,
+				F0910C2A2A0EF81B003FC001 /* AppContainer.swift in Sources */,
+				F0910C0A2A0EE6BB003FC001 /* MusicCategoriesViewController.swift in Sources */,
+				F0E37F682A40D27A00CEFAAE /* ArtistAlbumViewModel.swift in Sources */,
+				F0910C0C2A0EE6CE003FC001 /* MusicCategoriesViewModel.swift in Sources */,
+				F0E37F662A40D27A00CEFAAE /* ArtistAlbumRouter.swift in Sources */,
+				F0910C0E2A0EE716003FC001 /* MusicCategoriesRouter.swift in Sources */,
+				F0910C272A0EF26E003FC001 /* SplashViewModel.swift in Sources */,
+				F0910C232A0EF254003FC001 /* SplashRouter.swift in Sources */,
+				F0AB19EE2A143AA0003F1F12 /* FavoritesViewModel.swift in Sources */,
+				F0CCD6402A3A49B00054031E /* ArtistRouter.swift in Sources */,
+				F0910C152A0EED8E003FC001 /* BaseViewModel.swift in Sources */,
+				F0910C132A0EED84003FC001 /* BaseViewController.swift in Sources */,
 				F0910B862A0EE132003FC001 /* AppDelegate.swift in Sources */,
-				F0910B882A0EE132003FC001 /* SceneDelegate.swift in Sources */,
+				F0CCD6412A3A49B00054031E /* ArtistViewController.swift in Sources */,
+				F0910C052A0EE64D003FC001 /* AppRouter.swift in Sources */,
+				F0AB19F52A143C91003F1F12 /* TabBarRoute.swift in Sources */,
+				F0910C252A0EF260003FC001 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F0910B8B2A0EE132003FC001 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0910B8C2A0EE132003FC001 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F0910B902A0EE137003FC001 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,7 +534,7 @@
 		};
 		F0910B972A0EE137003FC001 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 481138053B1508A33734155A /* Pods-DeezerMVVMRouter.debug.xcconfig */;
+			baseConfigurationReference = 2D62661A60AC55E134CFF70B /* Pods-DeezerMVVMRouter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,7 +545,6 @@
 				INFOPLIST_FILE = DeezerMVVMRouter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,7 +562,7 @@
 		};
 		F0910B982A0EE137003FC001 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38B304CFC8145F49F8830E36 /* Pods-DeezerMVVMRouter.release.xcconfig */;
+			baseConfigurationReference = 2812DCDBA5091D8ABC65DF16 /* Pods-DeezerMVVMRouter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -376,7 +573,6 @@
 				INFOPLIST_FILE = DeezerMVVMRouter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
